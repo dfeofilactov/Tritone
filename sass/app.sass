@@ -1,0 +1,50 @@
+@import "colors"
+
+.top
+    top: 0
+
+.hidden
+    top: 100vh
+
+.appContainer
+    position: absolute
+    background-color: #020608
+    width: 100vw
+    height: 100vh
+    transition: all .5s ease
+    .colorPicker
+        position: absolute
+        $defWidth: 25vw
+        width: $defWidth
+        height: $defWidth
+        border-radius: #{$defWidth/2}
+        background-color: $blue
+        left: calc(50% - #{$defWidth/2})
+        top: 10vh
+        transition: all .5s ease
+        overflow: hidden
+        .editPanel
+            position: absolute
+            left: 70%
+            top: 70%
+            width: 30vw
+            height: 25vw
+            background-color: darken(#020608, 2)
+            box-shadow: 0 0 20px rgb(0, 0, 0)
+            opacity: 0
+            transition: all .5s ease
+    #home
+        position: absolute
+        top: 2vw
+        left: 5vw
+        color: $blue
+        cursor: pointer
+        transition: all .5s ease
+    #home:hover
+            color: lighten($blue, 10)
+    .colorPicker:hover
+        cursor: pointer
+        background-color: darken($blue, 15)
+        overflow: visible
+        .editPanel
+            opacity: .7

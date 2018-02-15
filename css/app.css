@@ -1,0 +1,47 @@
+.top {
+  top: 0; }
+
+.hidden {
+  top: 100vh; }
+
+.appContainer {
+  position: absolute;
+  background-color: #020608;
+  width: 100vw;
+  height: 100vh;
+  transition: all .5s ease; }
+  .appContainer .colorPicker {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 12.5vw;
+    background-color: #2FA1AE;
+    left: calc(50% - 12.5vw);
+    top: 10vh;
+    transition: all .5s ease;
+    overflow: hidden; }
+    .appContainer .colorPicker .editPanel {
+      position: absolute;
+      left: 70%;
+      top: 70%;
+      width: 30vw;
+      height: 25vw;
+      background-color: black;
+      box-shadow: 0 0 20px black;
+      opacity: 0;
+      transition: all .5s ease; }
+  .appContainer #home {
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    color: #2FA1AE;
+    cursor: pointer;
+    transition: all .5s ease; }
+  .appContainer #home:hover {
+    color: #44becc; }
+  .appContainer .colorPicker:hover {
+    cursor: pointer;
+    background-color: #1f6972;
+    overflow: visible; }
+    .appContainer .colorPicker:hover .editPanel {
+      opacity: .7; }

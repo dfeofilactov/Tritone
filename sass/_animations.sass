@@ -1,0 +1,63 @@
+@import "consts"
+@import "colors"
+
+@keyframes load
+    0%
+        opacity: 1
+    50%
+        opacity: 1
+    100%
+        opacity: 0
+
+@keyframes scroll-label
+    0%
+        opacity: .5
+    100%
+        opacity: .8
+
+@keyframes over-load
+    0%
+        top: 65%
+        opacity: 0
+    70%
+        top: 65%
+        opacity: 0
+    100%
+        top: 60%
+        opacity: 1
+
+@keyframes logo-load
+    0%
+        transform: rotate(30deg) scale(1.5)
+    70%
+        transform: rotate(30deg) scale(1.5)
+    100%
+        transform: rotate(30deg) scale(1)
+
+@keyframes begin-shadow
+    0%
+        transform: scale(.8, .3) translate(-#{$defWidth/2}, #{$defWidth*.1}) rotate(0deg)
+    100%
+        transform: scale(.8, .3) translate(-#{$defWidth/5}, #{$defWidth*.2}) rotate(-37deg)
+
+@keyframes begin-circle
+    0%
+        transform: scaleY(.35) rotate(0deg)
+        opacity: 1
+    30%
+        transform: scaleY(.35) rotate(360deg)
+        opacity: 1
+
+@keyframes fade-in
+    0%
+        transform: translateX(#{$defWidth})
+    100%
+        transform: translateX(0vw)
+
+@keyframes logo
+    0%
+        transform: rotate(30deg)
+        opacity: 0
+    100%
+        transform: rotate(30deg)
+        opacity: 1
