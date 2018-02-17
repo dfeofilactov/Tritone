@@ -8,43 +8,31 @@
 
 .appContainer
     position: absolute
-    background-color: #020608
+    // background-color: #020608
+    background: url(../src/app-back.png)
+    background-size: cover
     width: 100vw
     height: 100vh
     transition: all .5s ease
-    .colorPicker
+    .darken-back
         position: absolute
-        $defWidth: 25vw
-        width: $defWidth
-        height: $defWidth
-        border-radius: #{$defWidth/2}
-        background-color: $blue
-        left: calc(50% - #{$defWidth/2})
-        top: 10vh
-        transition: all .5s ease
-        overflow: hidden
-        .editPanel
-            position: absolute
-            left: 70%
-            top: 70%
-            width: 30vw
-            height: 25vw
-            background-color: darken(#020608, 2)
-            box-shadow: 0 0 20px rgb(0, 0, 0)
-            opacity: 0
-            transition: all .5s ease
+        width: 100%
+        height: 100%
+        background-color: #070F16
+        opacity: .75
+    .side-bar
+        position: absolute
+        width: 10vw
+        height: 100%
+        left: 0
+        background-color: #070F16
+        opacity: .63
     #home
         position: absolute
         top: 2vw
-        left: 5vw
+        left: 2vw
         color: $blue
         cursor: pointer
         transition: all .5s ease
     #home:hover
             color: lighten($blue, 10)
-    .colorPicker:hover
-        cursor: pointer
-        background-color: darken($blue, 15)
-        overflow: visible
-        .editPanel
-            opacity: .7

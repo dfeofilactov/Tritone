@@ -15,5 +15,13 @@
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neptunews/app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neptunews/app/issues"
+  },
+  "homepage": "https://github.com/neptunews/app#readme"
 }
