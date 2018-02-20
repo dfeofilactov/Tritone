@@ -1,0 +1,219 @@
+@import "colors"
+
+.wrap
+    .top
+        width: 100%
+        height: 50%
+        position: relative
+        padding-top: 9vh
+        padding-left: 6vw
+        padding-bottom: 4.5vh
+        padding-right: 6vw
+        box-sizing: border-box
+        .wrap-container
+            position: relative
+            display: block
+            width: 100%
+            height: 100%
+            .last-list
+                position: relative
+                width: 80vh
+                height: 100%
+                // background-color: rgb(96, 149, 41)
+                opacity: 1
+                .last-list-icons-container
+                    position: relative
+                    float: left
+                    width: 40vh
+                    height: 100%
+                    .last-list-icon
+                        position: absolute
+                        border-radius: 50%
+                        transition: all .5s ease
+                        background-color: #070F16
+                        // box-shadow: 0 0 30px rgba(0, 0, 0, 0.4)
+                        img
+                            display: block
+                            position: absolute
+                            width: 70%
+                            top: 23%
+                            left: 15%
+                    #top-icon
+                        // background-color: #8c2299
+                    #first-icon
+                        // background-color: #d41f1f
+                    #second-icon
+                        // background-color: #1f82d4
+                    #third-icon
+                        // background-color: #22d41f
+                    #bottom-icon
+                        // background-color: #d41f1f
+                    .first-icon
+                        width: 37.5vh
+                        height: 100%
+                        left: 2.5vh
+                        opacity: 1
+                        z-index: 3
+                    .second-icon
+                        width: 30vh
+                        height: 80%
+                        left: 1.25vh
+                        opacity: .6
+                        z-index: 2
+                    .third-icon
+                        width: 24vh
+                        height: 64%
+                        left: 0
+                        opacity: .3
+                        z-index: 1
+
+                    .top-icon
+                        width: 37.5vh
+                        height: 100%
+                        transform: translateX(-37.5vh)
+                        left: 2.5vh
+                        opacity: 0
+                        z-index: 4
+                    .bottom-icon
+                        width: 20vh
+                        height: 20vh
+                        left: -1.25vh
+                        opacity: 0
+                        z-index: 0
+
+                .last-list-menu
+                    width: 50%
+                    height: 100%
+                    position: relative
+                    display: block
+                    float: left
+                    box-sizing: border-box
+                    padding-left: 7.5%
+                    // background-color: #6e1616
+                    .lblName
+                        box-sizing: border-box
+                        width: 100%
+                        height: 25%
+                        // background-color: rgb(199, 143, 6)
+                        top: 25%
+                        position: relative
+                        display: block
+                        p
+                            display: block
+                            box-sizing: border-box
+                            padding: 0
+                            margin: 0
+                            color: #CECECE
+                            width: 100%
+                            line-height: normal
+                        #lblMain
+                            height: 50%
+                            font-size: 5vh
+                            font-weight: lighter
+                            opacity: .9
+                        #lblUnder
+                            height: 25%
+                            margin-top: .5vh
+                            margin-left: .2vw
+                            font-size: 2.4vh
+                            font-weight: 100
+                            opacity: .2
+                    .btnContainer
+                        display: block
+                        position: relative
+                        width: 100%
+                        height: 6vh
+                        top: 26%
+                        .buttonDark
+                            display: block
+                            box-sizing: border-box
+                            position: relative
+                            width: 47.5%
+                            background-color: #070F16
+                            border: .5px solid #070F16
+                            height: 100%
+                            float: left
+                            opacity: .63
+                            transition: all .5s ease
+                            cursor: pointer
+                            p
+                                display: block
+                                box-sizing: border-box
+                                padding: 0
+                                margin: 0
+                                width: 100%
+                                line-height: 6vh
+                                font-size: 2.4vh
+                                font-weight: lighter
+                                text-align: center
+                                opacity: .63
+                        .buttonDark:hover
+                            opacity: 1
+                            //border: .5px solid darken($blue, 20)
+                        #btnEdit
+                        #btnRemove
+                            margin-left: 5%
+
+    .bottom
+        box-sizing: border-box
+        width: 100%
+        height: 50%
+        position: relative
+        padding-left: 6vw
+        padding-top: 9vh
+        .block
+            display: block
+            float: left
+            box-sizing: border-box
+            margin-left: 30px
+            padding-left: 30px
+            padding-right: 30px
+            padding-top: 30px
+            padding-bottom: 30px
+            width: 180px
+            height: 180px
+            background-color: #070F16
+            opacity: .4
+            transition: all .5s ease
+            .lbl-name-block
+                width: 100%
+                margin: 0
+                padding: 0
+                font-size: 22px
+                color: #CECECE
+                font-weight: 100
+            .color-logo
+                box-sizing: border-box
+                padding: 0 15px
+                width: 100%
+                margin-top: 15px
+                height: 83px
+                .top-color
+                    width: 64px
+                    height: 64px
+                    border-radius: 32px
+                    position: relative
+                    left: calc(50% - 32px)
+                    background-color: #2F7792
+                    z-index: 2
+                .left-color, .right-color
+                    width: 40px
+                    float: left
+                    height: 40px
+                    border-radius: 20px
+                    position: relative
+                    top: -38px
+                    z-index: 1
+
+                .left-color
+                    left: -6px
+                    background-color: #182836
+                .right-color
+                    right: -15px
+                    background-color: #B1B1B1
+
+        .block:hover
+            opacity: .63
+            transform: scale(1.05)
+        #first-block
+            margin-left: 0

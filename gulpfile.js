@@ -15,7 +15,7 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 })
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function() {                                 
     browserSync.init({
         server: {
             baseDir: "./"

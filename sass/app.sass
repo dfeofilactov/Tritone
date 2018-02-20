@@ -8,11 +8,11 @@
 
 .appContainer
     position: absolute
-    // background-color: #020608
+    //background-color: #152f47
     background: url(../src/app-back.png)
     background-size: cover
     width: 100vw
-    height: 100vh
+    height: 100%
     transition: all .5s ease
     .darken-back
         position: absolute
@@ -20,13 +20,24 @@
         height: 100%
         background-color: #070F16
         opacity: .75
+        z-index: 0
     .side-bar
-        position: absolute
-        width: 10vw
+        position: relative
+        display: inline-block
+        float: left
+        $sbWidth: 50px
+        width: $sbWidth
         height: 100%
         left: 0
         background-color: #070F16
         opacity: .63
+        z-index: 100
+    .wrap
+        display: inline-block
+        position: relative
+        width: calc(100% - 50px)
+        height: 100%
+        opacity: 1
     #home
         position: absolute
         top: 2vw
@@ -34,5 +45,6 @@
         color: $blue
         cursor: pointer
         transition: all .5s ease
+        z-index: 100
     #home:hover
             color: lighten($blue, 10)

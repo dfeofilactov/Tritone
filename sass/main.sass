@@ -4,14 +4,43 @@
 html, body
     margin: 0
     padding: 0
-    background-color: $dark-blue
+    background-color: rgba(#be2222, 0)
     color: rgb(159, 159, 159)
-    font-family: Ubuntu Mono
+    font-family: Comfortaa
     font-size: 14px
     font-weight: bold
     overflow: hidden
 
+header
+    display: block
+    width: 100%
+    height: 25px
+    position: relative
+    top: 0
+    background-color: darken($white, 10)
+    opacity: 1
+    z-index: 998
+    -webkit-app-region: drag
+
+    .btn-mng
+        display: block
+        position: relative
+        float: right
+        right: 10px
+        top: 5px
+        width: 15px
+        height: 15px
+        border-radius: 7.5px
+        background-color: #222222
+        opacity: .8
+        transition: all .5s ease
+        cursor: pointer
+        -webkit-app-region: no-drag
+    .btn-mng:hover
+        opacity: 1
+    #btn-close
 .container
+    display: none
     position: absolute
     $defWidth: 25vw
     left: calc(50% - #{$defWidth/2})

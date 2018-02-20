@@ -6,18 +6,94 @@
     <script src="js/start.js"></script>
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
     <link href="css/app.css" type="text/css" rel="stylesheet"/>
+    <link href="css/wrap.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
+    <header>
+        <div id="btn-close" class="btn-mng"></div>
+    </header>
     <div class="container">
         <div class="logo">
             <img src="src/logo.png" alt="logo" width="100%">
         </div>
         <div id="start" class="btnStart"><p>start</p></div>
     </div>
-    <div id="appPage" class="appContainer hidden">
+    <div id="appPage" class="appContainer top">
         <div class="darken-back"></div>
         <div class="side-bar"></div>
-        <div id="home">home</div>
+        <div class="wrap">
+            <div class="top">
+                <div class="wrap-container">
+                    <div class="last-list">
+                        <div id="scroll-container" class="last-list-icons-container">
+                            <div id="top-icon" class="last-list-icon top-icon">
+                                <img src="src/top-icon.png" alt="Color">
+                            </div>
+                            <div id="first-icon" class="last-list-icon first-icon">
+                                <img src="src/top-icon.png" alt="Color">
+                            </div>
+                            <div id="second-icon" class="last-list-icon second-icon">
+                                <img src="src/top-icon.png" alt="Color">
+                            </div>
+                            <div id="third-icon" class="last-list-icon third-icon">
+                                <img src="src/top-icon.png" alt="Color">
+                            </div>
+                            <div id="bottom-icon" class="last-list-icon bottom-icon">
+                                <img src="src/top-icon.png" alt="Color">
+                            </div>
+                        </div>
+                        <div class="last-list-menu">
+                            <div class="lblName">
+                                <p id="lblMain">Color Name</p>
+                                <p id="lblUnder">solid color scheme</p>
+                            </div>
+                            <div class="btnContainer">
+                                <div id="btnEdit" class="buttonDark">
+                                    <p>edit</p>
+                                </div>
+                                <div id="btnRemove" class="buttonDark">
+                                    <p>remove</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div id="first-block" class="block">
+                    <p class="lbl-name-block">Color</p>
+                    <div class="color-logo">
+                        <div class="top-color"></div>
+                        <div class="left-color"></div>
+                        <div class="right-color"></div>
+                    </div>
+                </div>
+                <div id="second-block" class="block">
+                    <p class="lbl-name-block">Color</p>
+                    <div class="color-logo">
+                        <div class="top-color"></div>
+                        <div class="left-color"></div>
+                        <div class="right-color"></div>
+                    </div>
+                </div>
+                <div id="third-block" class="block">
+                    <p class="lbl-name-block">Color</p>
+                    <div class="color-logo">
+                        <div class="top-color"></div>
+                        <div class="left-color"></div>
+                        <div class="right-color"></div>
+                    </div>
+                </div>
+                <div id="fourth-block" class="block">
+                    <p class="lbl-name-block">Color</p>
+                    <div class="color-logo">
+                        <div class="top-color"></div>
+                        <div class="left-color"></div>
+                        <div class="right-color"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
