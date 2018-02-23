@@ -83,18 +83,20 @@ header {
     display: block;
     position: relative;
     float: right;
-    right: 10px;
+    margin-right: 6px;
     top: 5px;
     width: 15px;
     height: 15px;
     border-radius: 7.5px;
     background-color: #222222;
-    opacity: .8;
+    opacity: .1;
     transition: all .5s ease;
     cursor: pointer;
     -webkit-app-region: no-drag; }
   header .btn-mng:hover {
     opacity: 1; }
+  header #btn-close {
+    margin-right: 10px; }
 
 .container {
   display: none;

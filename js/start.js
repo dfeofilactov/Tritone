@@ -7,7 +7,7 @@ window.onload = function() {
 
     btnClose.onclick = closeWindow;
 
-    iconScroll.onclick = function () {
+    iconScroll.onwheel = function () {
         console.log("click");
         var top = document.getElementById('top-icon');
         var first = document.getElementById('first-icon');
