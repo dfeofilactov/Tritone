@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 gulp.task('default', ['browser-sync', 'sass'], function() {
     gulp.watch("sass/*.sass", ['sass']).on('change', reload);;
     gulp.watch("*.html").on('change', reload);
+    gulp.watch("js/*.js").on('change', reload);
 })
 
 gulp.task('sass', function() {

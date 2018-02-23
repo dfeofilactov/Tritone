@@ -4,21 +4,21 @@
 .hidden {
   top: 100vh; }
 
-.appContainer {
+.app-container {
   position: absolute;
-  background: url(../src/app-back.png);
+  background-color: #152f47;
   background-size: cover;
   width: 100vw;
   height: 100%;
   transition: all .5s ease; }
-  .appContainer .darken-back {
+  .app-container .darken-back {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #070F16;
     opacity: .75;
     z-index: 0; }
-  .appContainer .side-bar {
+  .app-container .side-bar {
     position: relative;
     display: inline-block;
     float: left;
@@ -28,13 +28,13 @@
     background-color: #070F16;
     opacity: .63;
     z-index: 100; }
-  .appContainer .wrap {
+  .app-container .wrap {
     display: inline-block;
     position: relative;
     width: calc(100% - 50px);
     height: 100%;
     opacity: 1; }
-  .appContainer #home {
+  .app-container #home {
     position: absolute;
     top: 2vw;
     left: 2vw;
@@ -42,5 +42,5 @@
     cursor: pointer;
     transition: all .5s ease;
     z-index: 100; }
-  .appContainer #home:hover {
+  .app-container #home:hover {
     color: #44becc; }

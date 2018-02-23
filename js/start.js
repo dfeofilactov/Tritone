@@ -1,11 +1,15 @@
-var {remote} = require("electron");
+var {
+    remote
+} = require("electron");
 
-window.onload = function() {
+window.onload = function () {
     var btnStart = document.getElementById('start');
     var iconScroll = document.getElementById('scroll-container');
     var btnClose = document.getElementById('btn-close');
+    var btnMinimize = document.getElementById('btn-hide');
 
     btnClose.onclick = closeWindow;
+    btnMinimize.onclick = minimizeWindow;
 
     iconScroll.onwheel = function () {
         console.log("click");
@@ -34,7 +38,13 @@ function toggleClass(obj, remove, add) {
     obj.classList.add(add);
 }
 
-function closeWindow(){
+function closeWindow() {
     var win = remote.getCurrentWindow();
     win.close();
+    alert('hello');
+}
+
+function minimizeWindow() {
+    var win = remote.getCurrentWindow();
+    win.minimize();
 }
