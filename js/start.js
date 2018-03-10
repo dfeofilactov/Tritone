@@ -46,5 +46,5 @@ function closeWindow() {
 
 function minimizeWindow() {
     var win = remote.getCurrentWindow();
-    win.minimize();
+    win.minimize(); 
 }
